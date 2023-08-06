@@ -1,0 +1,37 @@
+/*
+Nesta atividade, você deve criar um código em JavaScript com uma matriz bidimensional para armazenar informações sobre animais e as suas características.
+
+Cada linha deve representar um animal e cada coluna terá as diferentes informações sobre ele, como nome, espécie e idade.
+
+*/
+// desenvolvido no programiz por MarcosLemos-dev
+
+let linhas = prompt("digite o numero de animais  que estará na matriz terá; ");
+let colunas = 4;
+
+let matrizAnimal = [];
+for (var i = 0; i < linhas ; i++){//i linhas
+matrizAnimal[i] = [];
+        for (var j = 0; j < colunas ; j++){// j colunas
+         matrizAnimal[i][j] = '';
+   }
+    }
+for (var L = 0; L < linhas ; L++){//
+        for (var C = 0; C < colunas ; C++){// 
+        console.log(" forma de preenchimento é diga o animal , => 1:nome => 2:especie => 3:idade => 4:novo Animal ");
+         matrizAnimal[L][C] = prompt("digite como na sequencia, ou seja,  um passo por vez  : \n " );
+         console.log(`${C+1}º passo: `);
+   }
+    }
+let conteudoMatriz = '';
+for (var L = 0; L < linhas ; L++){//
+        for (var C = 0; C < colunas ; C++){// 
+            if(C < colunas-1){
+                conteudoMatriz += matrizAnimal[L][C] + "\t\t";
+            }else{
+                conteudoMatriz += matrizAnimal[L][C] + "\n";
+            }
+   }
+    }
+    console.log("conteudo da matrizAnimal: \n" + conteudoMatriz);
+    console.log("fim do programa");
